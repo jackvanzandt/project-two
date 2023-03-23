@@ -12,36 +12,56 @@ html, body {
 body {
 	margin: 0;
 	padding: 0;
+  overflow: hidden;
 }
 
 .search-container {
 	background-color: #f2f2f2;
 	padding: 100px;
-  width: 100%;
-  align-items: flex-start
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.badges-container {
+  background-color: #f2f2f2;
+	padding: 100px;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+
 }
 
 .explore-container {
   width: 100%;
   height: 100%;
-  background-color: grey;
+  background-color: #d3dce4;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  
 }
 
 .explore-container h1 {
   margin: 0;
-  padding: 10px;
+  padding-top: 50px;
+  padding-bottom: 15px;
+  padding-left: 80px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #5b5a5a;
 }
 
 .search-container input[type="text"] {
-	padding: 10px;
+	padding: 20px;
 	border: none;
 	background-color: #fff;
 	font-size: 16px;
 	width: 60%;
-	margin-right: 10px;
+  margin: 0 10px 0 0;
 }
 
 .search-container button {
@@ -55,8 +75,8 @@ body {
 
 .badges-container {
 	display: flex;
-	flex-wrap: wrap;
 	padding: 20px;
+  margin: auto;
 }
 
 .badge {
@@ -74,6 +94,45 @@ body {
 	background-color: #3e8e41;
 }
 
+.search-text {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+header {
+  background-color: white;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+  font-size: 18px;
+  font-style: und;
+  font-weight: bold;
+  color: #888;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.input-container {
+  display: flex;
+}
+
+#search-input {
+  margin-right: 10px;
+  width: 300px;
+}
+
+#search-button {
+  margin-left: 10px;
+}
+
+.content-wrapper {
+  overflow-y: scroll;
+  height: 100vh;
+}
 </style>
 
 <title>project-two</title>
@@ -83,12 +142,20 @@ body {
       <link rel="stylesheet" href="styles.css">
     </head>
     <body>
+      <div class="content-wrapper">
+      <header>
+        <div class="logo">Penn State Digital Badges</div>
+      </header>
       <div class="explore-container">
       <h1>Explore</h1>
       <div class="search-container">
+        <div class="search-text">Explore our content in a self-guided manner. Want us to guide you through learning new skills? Try out Missions. Looking for other people with similar focus? Find them in Groups. Interested in viewing all the options within a certain subject area? You can do that with Topics.</div>
+          <div class="input-container">
         <input type="text" id="search-input" placeholder="Search Content, Topics, and People">
         <button id="search-button">Search</button>
+        </div>
       </div>
+      <br>
       <div class="badges-container">
         <div class="badge">Badge 1</div>
         <div class="badge">Badge 2</div>
@@ -96,7 +163,11 @@ body {
         <div class="badge">Badge 4</div>
       </div>
     </div>
+    <div id="app">
+      
+    </div>
       <script type="module" src="script.js"></script>
+    </div>
     </body>
 
 
