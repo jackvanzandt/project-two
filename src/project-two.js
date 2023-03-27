@@ -26,7 +26,14 @@ export class ProjectTwo extends LitElement {
 
   static get styles() {
     return css`
-
+  .badge {
+    border: 1px solid black;
+			padding: 10px;
+			font-size: 20px;
+			text-align: center;
+			margin: 10px;
+			width: 200px;
+  }
 
     `;
   }
