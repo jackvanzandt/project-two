@@ -1,4 +1,5 @@
 import { LitElement, html, css } from "lit";
+import "edu-badge/src/edu-badge.js"
 
 export class BadgeProject extends LitElement {
   static get tag() {
@@ -59,11 +60,13 @@ export class BadgeProject extends LitElement {
         ${this.badges.map(
           (badge) => html`
             <div class="item">
-              <project-two
-                badgeCreator="${badge.badgeCreator}"
-                badgeMajor="${badge.badgeMajor}"
-                badgeName="${badge.badgeName}"
-              ></project-two>
+              <project-two>
+                <edu-badge
+                name="${badge.name}"
+                creator="${badge.creator}"
+                image="${badge.image}"
+                department="${badge.department}"></edu-badge>
+              </project-two>
             </div>
           `
         )}
