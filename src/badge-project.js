@@ -63,14 +63,13 @@ export class BadgeProject extends LitElement {
         ${this.badges.map(
           (badge) => html`
             <div class="item">
-              <project-two
-                
-                creator="${badge.creator}"
-                department="${badge.department}"
-                image="${badge.image}"
+              <project-two>
+                <edu-badge
                 name="${badge.name}"
-                
-              ></project-two>
+                creator="${badge.creator}"
+                image="${badge.image}"
+                department="${badge.department}"></edu-badge>
+              </project-two>
             </div>
           `
         )}

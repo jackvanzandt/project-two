@@ -3,6 +3,7 @@ import { LitElement, html, css } from 'lit';
 import "@lrnwebcomponents/simple-icon/simple-icon.js";
 import "@lrnwebcomponents/simple-icon/lib/simple-icons.js";
 
+
 export class ProjectTwo extends LitElement {
   static get properties() {
     return {
@@ -44,7 +45,8 @@ export class ProjectTwo extends LitElement {
 
   render() {
     return html`
-
+      
+      
 
     `;
   }
