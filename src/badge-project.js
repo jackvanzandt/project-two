@@ -1,4 +1,7 @@
 import { LitElement, html, css } from "lit";
+import "edu-badge/src/edu-badge.js";
+
+
 
 export class BadgeProject extends LitElement {
   static get tag() {
@@ -22,6 +25,7 @@ export class BadgeProject extends LitElement {
     console.log("calling backend")
     const url = new URL("../api/badge-back", import.meta.url).href;
     const data = { searchString: this.searchString };
+    
     fetch(url, {
       method: "POST", // or 'PUT'
       headers: {
@@ -60,9 +64,12 @@ export class BadgeProject extends LitElement {
           (badge) => html`
             <div class="item">
               <project-two
-                badgeCreator="${badge.badgeCreator}"
-                badgeMajor="${badge.badgeMajor}"
-                badgeName="${badge.badgeName}"
+                
+                creator="${badge.creator}"
+                department="${badge.department}"
+                image="${badge.image}"
+                name="${badge.name}"
+                
               ></project-two>
             </div>
           `

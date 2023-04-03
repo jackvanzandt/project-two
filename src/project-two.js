@@ -18,6 +18,10 @@ export class ProjectTwo extends LitElement {
         type: String,
         reflect: true,
       },
+      badgeIcon: {
+        type: String,
+        reflect: true,
+      }
     }
   }
 
@@ -33,8 +37,9 @@ export class ProjectTwo extends LitElement {
   constructor() {
     super();
     this.badgeCreator = "";
-    this.badgeMajor = "";
+    this.badgeCreator = "";
     this.badgeName = "";
+    this.badgeIcon = "";
   }
 
   render() {
