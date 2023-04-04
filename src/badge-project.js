@@ -1,5 +1,5 @@
 import { LitElement, html, css } from "lit";
-import "edu-badge/src/edu-badge.js";
+
 
 
 
@@ -63,13 +63,11 @@ export class BadgeProject extends LitElement {
         ${this.badges.map(
           (badge) => html`
             <div class="item">
-              <project-two>
                 <edu-badge
                 name="${badge.name}"
                 creator="${badge.creator}"
                 image="${badge.image}"
                 department="${badge.department}"></edu-badge>
-              </project-two>
             </div>
           `
         )}
