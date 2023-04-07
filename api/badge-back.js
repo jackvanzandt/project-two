@@ -3,30 +3,30 @@ export default async function handler(request, res) {
 
   const badge = [
     {
-      name: "Badge Thing",
-      creator: "Steve",
-      image: "https://badgesapp.psu.edu/uploads/badge/image/337/APA_Style.png",
-      department: "IST"
+      "name": "Badge Thing",
+      "creator": "Steve",
+      "image": "https://badgesapp.psu.edu/uploads/badge/image/337/APA_Style.png",
+      "department": "IST"
     },
     {
-      name: "Badge stuff",
-      creator: "Donnald J. Trump",
-      image: "https://badgesapp.psu.edu/uploads/badge/image/337/APA_Style.png",
-      department: "Political Science"
+      "name": "Badge stuff",
+      "creator": "Donnald J. Trump",
+      "image": "https://badgesapp.psu.edu/uploads/badge/image/337/APA_Style.png",
+      "department": "Political Science"
       
     },
     
     {
-      name: "Hungry asf",
-      creator: "Caleb Pellerite",
-      image: "https://badgesapp.psu.edu/uploads/badge/image/337/APA_Style.png",
-      department: "Food"
+      "name": "Hungry asf",
+      "creator": "Caleb Pellerite",
+      "image": "https://badgesapp.psu.edu/uploads/badge/image/337/APA_Style.png",
+      "department": "Food"
     },
     {
-      name: "??????",
-      creator: "someone",
-      image: "https://badgesapp.psu.edu/uploads/badge/image/337/APA_Style.png",
-      department: "We dont know"
+      "name": "??????",
+      "creator": "someone",
+      "image": "https://badgesapp.psu.edu/uploads/badge/image/337/APA_Style.png",
+      "department": "We dont know"
     },
     
   ];

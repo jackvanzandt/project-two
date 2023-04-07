@@ -1,5 +1,5 @@
 import { LitElement, html, css } from "lit";
-
+import "./edu-badge.js";
 
 
 
